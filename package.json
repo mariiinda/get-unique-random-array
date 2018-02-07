@@ -7,19 +7,41 @@
   "scripts": {
     "prepublishOnly": "npm test && npm run build",
     "build": "babel src --out-dir dist --ignore '**/*.test.js'",
-    "test": "ava",
+    "test": "xo && ava",
     "test-watch": "npm test -- --watch"
   },
   "author": "Marinda <hello@marinda.me> (http://marinda.me/)",
-  "keywords": ["random array", "unique random array"],
+  "keywords": [
+    "random array",
+    "unique random array"
+  ],
   "license": "MIT",
   "devDependencies": {
     "ava": "0.25.0",
     "babel-cli": "6.26.0",
     "babel-preset-env": "1.6.1",
-    "babel-register": "6.26.0"
+    "babel-register": "6.26.0",
+    "eslint-config-prettier": "2.9.0",
+    "eslint-plugin-prettier": "2.6.0",
+    "prettier": "1.10.2",
+    "xo": "0.18.2"
   },
   "ava": {
-    "require": ["babel-register"]
-  }
+    "require": [
+      "babel-register"
+    ]
+  },
+  "xo": {
+    "prettier": true,
+    "extends": [
+      "prettier"
+    ],
+    "plugins": [
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": "error"
+    }
+  },
+  "dependencies": {}
 }
