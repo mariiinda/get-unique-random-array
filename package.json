@@ -1,0 +1,25 @@
+{
+  "name": "get-unique-random-array",
+  "version": "1.0.0",
+  "description": "Get unique random array from an array",
+  "repository": "marinda-s/get-unique-random-array",
+  "main": "dist/index.js",
+  "scripts": {
+    "prepublishOnly": "npm test && npm run build",
+    "build": "babel src --out-dir dist --ignore '**/*.test.js'",
+    "test": "ava",
+    "test-watch": "npm test -- --watch"
+  },
+  "author": "Marinda <hello@marinda.me> (http://marinda.me/)",
+  "keywords": ["random array", "unique random array"],
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "0.25.0",
+    "babel-cli": "6.26.0",
+    "babel-preset-env": "1.6.1",
+    "babel-register": "6.26.0"
+  },
+  "ava": {
+    "require": ["babel-register"]
+  }
+}
