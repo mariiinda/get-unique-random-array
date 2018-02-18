@@ -12,7 +12,7 @@ $ npm install get-unique-random-array
 
 ```javascript
 import getUniqueRandomArray from "get-unique-random-array";
-// getUniqueRandomArray = require("get-unique-random-array").default; // node,commonJS
+// const getUniqueRandomArray = require("get-unique-random-array").default; // node,commonJS
 
 const targetArray = [
   { id: 1, status: false },
