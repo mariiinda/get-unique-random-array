@@ -1,6 +1,6 @@
 {
   "name": "get-unique-random-array",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Get unique random array from an array",
   "repository": "mar-i-nda/get-unique-random-array",
   "main": "dist/index.js",

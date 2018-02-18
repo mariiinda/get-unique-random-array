@@ -11,7 +11,7 @@ $ npm install get-unique-random-array
 ## Usage / API
 
 ```javascript
-import getRandomArray from "get-unique-random-array";
+import getUniqueRandomArray from "get-unique-random-array";
 // getUniqueRandomArray = require("get-unique-random-array").default; // node,commonJS
 
 const targetArray = [
@@ -23,7 +23,7 @@ const targetArray = [
 ];
 const size = 2;
 
-console.log(getRandomArray(targetArray, { size })); // => [ { id: 4, status: true }, { id: 3, status: false } ]
+console.log(getUniqueRandomArray(targetArray, { size })); // => [ { id: 4, status: true }, { id: 3, status: false } ]
 ```
 
 ## License
