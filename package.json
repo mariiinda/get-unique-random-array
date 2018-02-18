@@ -8,7 +8,7 @@
   "scripts": {
     "rollup-cjs": "rollup dist/index.js --output.format cjs --output.file dist/bundle.js",
     "prepublishOnly": "npm test && npm run build",
-    "build": "babel src --out-dir dist --ignore '**/*.test.js' & npm run rollup-cjs",
+    "build": "babel src --out-dir dist --ignore '**/*.test.js' && npm run rollup-cjs",
     "test": "xo && ava",
     "test-watch": "npm test -- --watch"
   },
