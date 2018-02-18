@@ -1,14 +1,12 @@
 {
   "name": "get-unique-random-array",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Get unique random array from an array",
   "repository": "mar-i-nda/get-unique-random-array",
-  "main": "dist/bundle.js",
-  "module": "dist/index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "rollup-cjs": "rollup dist/index.js --output.format cjs --output.file dist/bundle.js",
     "prepublishOnly": "npm test && npm run build",
-    "build": "babel src --out-dir dist --ignore '**/*.test.js' && npm run rollup-cjs",
+    "build": "babel src --out-dir dist --ignore '**/*.test.js'",
     "test": "xo && ava",
     "test-watch": "npm test -- --watch"
   },
@@ -26,7 +24,6 @@
     "eslint-config-prettier": "2.9.0",
     "eslint-plugin-prettier": "2.6.0",
     "prettier": "1.10.2",
-    "rollup": "0.56.1",
     "xo": "0.18.2"
   },
   "ava": {
