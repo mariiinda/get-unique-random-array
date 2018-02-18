@@ -1,14 +1,14 @@
 {
   "name": "get-unique-random-array",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Get unique random array from an array",
   "repository": "mar-i-nda/get-unique-random-array",
   "main": "dist/bundle.js",
   "module": "dist/index.js",
   "scripts": {
     "rollup-cjs": "rollup dist/index.js --output.format cjs --output.file dist/bundle.js",
-    "prepublishOnly": "npm test && npm run build & npm run rollup-cjs",
-    "build": "babel src --out-dir dist --ignore '**/*.test.js'",
+    "prepublishOnly": "npm test && npm run build",
+    "build": "babel src --out-dir dist --ignore '**/*.test.js' & npm run rollup-cjs",
     "test": "xo && ava",
     "test-watch": "npm test -- --watch"
   },
