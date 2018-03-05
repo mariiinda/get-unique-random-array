@@ -2,7 +2,7 @@
   "name": "get-unique-random-array",
   "version": "1.0.8",
   "description": "Get unique random array from an array",
-  "repository": "mar-i-nda/get-unique-random-array",
+  "repository": "marinda-s/get-unique-random-array",
   "main": "dist/index.js",
   "scripts": {
     "prepublishOnly": "npm test && npm run build",
