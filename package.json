@@ -1,6 +1,6 @@
 {
   "name": "get-unique-random-array",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Get unique random array from an array",
   "repository": "marinda-s/get-unique-random-array",
   "main": "dist/index.js",
