@@ -31,7 +31,6 @@ test("getRandomArray returns a unique array", t => {
   const arr = getRandomArray(targetArray, {
     size
   });
-  console.log(arr);
   const expected = [...new Set(arr)]; // Convert to Set and back to array, a Set cannot have duplicates
   t.deepEqual(arr, expected);
 });
@@ -41,4 +40,10 @@ test("getRandomArray returns an array of specified size", t => {
     size
   });
   t.true(arr.length === size);
+});
+
+test("getRandomArray randomly includes the last item", t => {
+  const testArray = [{ id: 1, status: false }];
+  const arr = getRandomArray(testArray);
+  t.true(arr.length === 1);
 });

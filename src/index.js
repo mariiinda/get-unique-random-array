@@ -13,7 +13,7 @@ const getRandomArray = (list = [], options = { size: 1 }) => {
     throw new Error("size: size can't be > than the target array length");
   }
   const randomList = [];
-  while (randomList.length < size) {
+  while (randomList.length <= size - 1) {
     const item = getRandomItem({ list });
     if (!randomList.includes(item)) {
       randomList.push(item);
